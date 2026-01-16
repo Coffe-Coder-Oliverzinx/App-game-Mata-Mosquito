@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br" id="HTML">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mata Mosquito - Menu</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="src/css/normalise_css.css">
+    <link rel="stylesheet" href="src/css/indexStyles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+
+</head>
+
+<body onresize="fixResize()">
+    <!--Comentário para manter o HTML limpo-->
+    <div class="container_pai">
+        <div class="container_inicial" id="container_inicial">
+            <div class="titulo" id="titulo"></div>
+
+            <div class="menu">
+                <select name="select" id="escolher_dificuldade">
+                    <option value="" disabled selected id="disabled">-- Selecione o nível --</option>
+                    <option value="1">-- Fácil --</option>
+                    <option value="2">-- Dificil --</option>
+                    <option value="3">-- Lunático --</option>
+                </select>
+                <button type="button" id="iniciar_jogo" onclick="startGame()">Iniciar jogo</button>
+
+            </div>
+
+        </div>
+
+        <div class="container_jogo" id="container_jogo">
+            <div class="area_de_vida" id="area_de_vida">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--Comentário para manter o HTML limpo-->
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>
